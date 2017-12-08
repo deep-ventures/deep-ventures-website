@@ -1,4 +1,4 @@
-baseURL = "https://deep.ventures/"
+baseURL = "//www.deep.ventures/"
 languageCode = "en-us"
 title = "Deep Ventures"
 theme = "deep-ventures"
