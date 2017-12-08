@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "nav.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "approach.html" . }}
+    {{ partial "case-studies.html" . }}
+    {{ partial "us.html" . }}
+    {{ partial "contact.html" . }}
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+</html>

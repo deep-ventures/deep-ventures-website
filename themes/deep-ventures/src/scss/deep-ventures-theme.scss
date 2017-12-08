@@ -1,0 +1,75 @@
+///////////////////////////////////////////
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:300,400');
+
+///////////////////////////////////////////
+// Bootstrap Theme variables override
+
+$blue: #061442;
+$orange: #f05e52;
+$gray-100: #fbfaf7;
+
+$theme-colors: (
+  "primary": $blue,
+  "secondary": $orange,
+  "dark": $blue
+);
+
+$link-color: $orange;
+$link-hover-decoration: none;
+
+$font-family-base: "Open Sans", "Helvetica Neue", sans-serif;
+
+$font-weight-normal: 300;
+$font-weight-bold: 400;
+
+$display1-size: 4rem;
+$display2-size: 3.5rem;
+$display3-size: 3rem;
+$display4-size: 2.5rem;
+
+///////////////////////////////////////////
+// Bootstrap import
+@import "node_modules/bootstrap/scss/bootstrap";
+
+///////////////////////////////////////////
+// Bootstrap overrides
+.bg-secondary a {
+  color: $blue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+  color: $orange;
+  font-family: "Libre Baskerville", serif;
+}
+
+section { padding: 2em 0 4em; }
+.spatious-1 { margin: 6em 0 3em; }
+.spatious-2 { margin: 4em 0 2em; }
+.spatious-3 { margin: 2em 0 1em; }
+
+@include media-breakpoint-down(sm) {
+  $display1-size: 2.5rem;
+  $display2-size: 2rem;
+  $display3-size: 1.5rem;
+  $display4-size: 1rem;
+  section { padding: 1em 0 2em; }
+  .spatious-1 { margin: 2em 0 1em; }
+  .spatious-2 { margin: 1.5em 0 0.75em; }
+  .spatious-3 { margin: 1em 0 0.5em; }
+}
+
+@include media-breakpoint-between(sm, md) {
+  $display1-size: 2.5rem;
+  $display2-size: 2rem;
+  $display3-size: 1.5rem;
+  $display4-size: 1rem;
+  section { padding: 1em 0 2em; }
+  .spatious-1 { margin: 2em 0 1em; }
+  .spatious-2 { margin: 1.5em 0 0.75em; }
+  .spatious-3 { margin: 1em 0 0.5em; }
+}

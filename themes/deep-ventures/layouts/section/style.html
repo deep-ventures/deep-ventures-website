@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "nav.html" . }}
+
+    <section id="style">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>Palette</h3>
+            <p class="bg-primary text-white">#061442</p>
+            <p class="bg-secondary text-light">#f05e52</p>
+            <p class="bg-light text-primary">#fbfaf7</p>
+            <p>These are defined in the bootstrap theme variables, so just use them as appropriate with classes <code>.bg-primary, .bg-secondary, .bg-light, .bg-dark, .text-primary, .text-secondary, .text-light, .text-dark</code></p>
+          </div>
+          <div class="col-sm">
+            <h3>Spacing</h3>
+            <p class="bg-light spatious-1"><code>.spatious-1</code></p>
+            <p class="bg-light spatious-2"><code>.spatious-2</code></p>
+            <p class="bg-light spatious-3"><code>.spatious-3</code></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <h3>Display Titles</h3>
+            <p class="display-1">.display-1</p>
+            <p class="display-2">.display-2</p>
+            <p class="display-3">.display-3</p>
+            <p class="display-4">.display-4</p>
+          </div>
+          <div class="col-sm">
+            <h3>Logos</h3>
+            <div class="bg-light" style="padding: 5px;">
+              <p>
+                <img src="{{ "images/logos/logo_h90dark.png" | absURL }}" class="img-fluid" alt="{{ .Site.Title }}">
+              </p>
+              <p>
+                <img src="{{ "images/logos/logo_icon_h150.png" | absURL }}" class="img-fluid" alt="{{ .Site.Title }}">
+                <img src="{{ "images/logos/logo_ricon_h150.png" | absURL }}" class="img-fluid" alt="{{ .Site.Title }}">
+                <img src="{{ "images/logos/logo_ricon_h64.png" | absURL }}" class="img-fluid" alt="{{ .Site.Title }}">
+              </p>
+            </div>
+            <div class="bg-primary" style="padding: 5px;">
+              <p>
+                <img src="{{ "images/logos/logo_h60.png" | absURL }}" class="img-fluid" alt="{{ .Site.Title }}">
+              </p>
+              <p>
+                <img src="{{ "images/logos/logo_h30.png" | absURL }}" class="img-fluid" alt="{{ .Site.Title }}">
+              </p>
+              <p>
+                <img src="{{ "images/logos/logo_badge_h100.png" | absURL }}" class="img-fluid" alt="{{ .Site.Title }}">
+              </p>
+              <p>
+                <img src="{{ "images/logos/logo_badge_h50.png" | absURL }}" class="img-fluid" alt="{{ .Site.Title }}">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credits" class="bg-secondary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>Credits</h3>
+            <p>Design Strategy: <a href="https://krispykrush.com/">KrispyKrush</a></p>
+            <p>SVG icons: discussion by Patrick Morrison, Telescope by Symbolon, lego by jon trillana, launch by Gregor Cresnar, Natural by Gregor Cresnar, chevron down by Hector M, all from the Noun Project
+            <p>Mountain background from unsplash</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+</html>

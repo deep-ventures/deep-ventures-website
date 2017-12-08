@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "nav.html" . }}
+    <section id="posts">
+      {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }}
+    </section>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "deep-ventures",
+  "version": "1.0.0",
+  "description": "hugo theme",
+  "main": "index.js",
+  "scripts": {
+    "css": "npm run css-build && npm run css-minify",
+    "css-build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/deep-ventures.scss static/css/deep-ventures.css",
+    "css-minify": "postcss static/css/deep-ventures.css > static/css/deep-ventures.min.css",
+    "test": "echo \"these are not the tests you are looking for\" && exit 1"
+  },
+  "author": "deep.ventures",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.7.2"
+  }
+}

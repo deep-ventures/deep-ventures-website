@@ -1,0 +1,13 @@
+baseURL = "https://deep.ventures/"
+languageCode = "en-us"
+title = "Deep Ventures"
+theme = "deep-ventures"
+
+googleAnalytics = ""
+
+[params]
+
+    favicon = "images/favicon.png"
+    author = "Deep Ventures"
+    description = "Deep Ventures is a digital product studio providing consolidated expertise in complex analytics and data science web-based software architectures."
+    keywords = "analytics, data science, big data, machine learning, data storytelling, data visualization, operational intelligence, digital product development"

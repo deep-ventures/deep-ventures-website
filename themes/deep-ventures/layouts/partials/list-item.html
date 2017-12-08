@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      {{ $.Scratch.Set "link" .RelPermalink }}
+      {{ with .Params.link }} {{ $.Scratch.Set "link" . }} {{ end }}
+
+      {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }}
+      {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
+
+      <h5><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h5>
+      <p class="lead">{{ $.Scratch.Get "subtitle" }}</p>
+      {{ range .Params.tags }} <kbd class="item-tag">{{ . }}</kbd> {{ end }}
+
+    </div>
+  </div>
+</div>

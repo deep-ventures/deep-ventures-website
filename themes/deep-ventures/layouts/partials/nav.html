@@ -1,0 +1,32 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand page-scroll" href="{{ if .IsHome }}/#top{{ else }}{{ .Site.BaseURL }}{{ end }}">
+      <img src="{{ "images/logos/logo_h30.png" | absURL }}" class="img-responsive" width="180" alt="{{ .Site.Title }}">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/#what">Approach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#case-studies">Case Studies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#us">Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">Contact</a>
+        </li>
+        {{/*
+          <li class="nav-item">
+            <a class="nav-link" href="{{ "posts/" | absURL }}">Blog</a>
+          </li>
+        */}}
+      </ul>
+    </div>
+  </div>
+</nav>

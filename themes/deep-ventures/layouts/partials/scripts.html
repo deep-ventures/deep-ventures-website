@@ -1,0 +1,13 @@
+{{ "<!-- bootstrap with requirements -->" | safeHTML }}
+<script src="{{ "js/vendors/jquery-3.2.1.slim.min.js"| absURL }}"></script>
+<script src="{{ "js/vendors/popper.min.js"| absURL }}"></script>
+<script src="{{ "js/vendors/bootstrap.min.js"| absURL }}"></script>
+
+{{ "<!-- Custom Theme -->" | safeHTML }}
+<script src="{{ "js/deep-ventures.js"| absURL }}"></script>
+
+{{ template "_internal/google_analytics_async.html" . }}
+
+{{ range .Site.Params.custom_js }}
+  <script src="{{ . | absURL }}"></script>
+{{ end }}
